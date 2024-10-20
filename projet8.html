@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="folliduciel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<title>Page d'accueil de l'Exercise 3</title>
+    <script src="exercise3.js" defer></script>
+</head>
+<body>
+ <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="mescompetences.html">Mes compétences</a></li>
+                <li><a href="mesprojets.html">Mes projets</a></li>
+                <li><a href="mecontacter.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+    <h1>Manipulation de dates (Date)</h1>
+
+    <!-- Formulaire saisie de date au format JJ-MM-AAAA -->
+    <form>
+        <label for="inputDate">Saisir une date (JJ-MM-AAAA) :</label>
+        <input type="text" id="inputDate" placeholder="JJ-MM-AAAA">
+        <button type="button" onclick="processDate()">Soumettre</button>
+    </form>
+
+    <!-- Paragraphe affichage jour, mois , année-->
+    <p id="dayOutput"></p>
+    <p id="monthOutput"></p>
+    <p id="yearOutput"></p>
+
+    <!-- Paragraphe affichage différence de jours -->
+    <h2>Différence en jours avec aujourd'hui</h2>
+    <p id="differenceOutput"></p>
+
+</body>
+<footer>
+        <p>&copy; 2024 - @folli_duciel</p>
+    </footer>
+</html>

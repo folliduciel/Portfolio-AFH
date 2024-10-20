@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="folliduciel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Page d'accueil du 7e projet</title>
+    <script src="projet7.js" defer></script>
+</head>
+<body>
+ <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="mescompetences.html">Mes compétences</a></li>
+                <li><a href="mesprojets.html">Mes projets</a></li>
+                <li><a href="mecontacter.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+    <h1>On s'amuse avec les nombres!</h1>
+
+    <!-- Zone de texte pour entrer un nombre -->
+    <label for="inputNumber">Veuillez saisir un nombre, SVP:</label>
+    <input type="number" id="inputNumber" oninput="processNumber()">
+
+    <!-- Paragraphe pour afficher la racine carrée -->
+    <p id="sqrtOutput"></p>
+
+    <!-- Paragraphe affichage nombre arrondi -->
+    <p id="roundedOutput"></p>
+
+    <!-- Bouton pour générer un nombre aléatoire -->
+    <button onclick="Aleatoire()">Appuyez pour générer un nombre aléatoire entre 0 et 100</button>
+    <p id="randomOutput"></p>
+
+    <!-- Entrées pour min et max pour la fonction Aleatoire2 -->
+    <h3> Veullez saisir une valeur minimale et maximale pour générer un nombre aléatoire entre elles:</h3>
+    <label for="minValue">Min :</label>
+    <input type="number" id="minValue">
+    
+    <label for="maxValue">Max :</label>
+    <input type="number" id="maxValue">
+
+    <button onclick="Aleatoire2()">Générer un nombre aléatoire</button>
+    <p id="randomRangeOutput"></p>
+
+</body>
+<footer>
+        <p>&copy; 2024 - @folli_duciel</p>
+    </footer>
+</html>

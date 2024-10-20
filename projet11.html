@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="folliduciel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title> Projet final - Calculateur de prêt hypothécaire</title>
+    <script src="projet11.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+        button {
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+ <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="mescompetences.html">Mes compétences</a></li>
+                <li><a href="mesprojets.html">Mes projets</a></li>
+                <li><a href="mecontacter.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+    <h1>Calculateur de prêt hypothécaire</h1>
+    
+    <label for="montant">Veuillez saisir le montant du prêt :</label>
+    <input type="number" id="montant" placeholder="Montant en €" required>
+    
+    <label for="taux">Veuillez saisir le taux d'intérêt annuel en pourcentage (%) :</label>
+    <input type="number" id="taux" placeholder="Taux d'intérêt" required>
+    
+    <label for="duree">Veuillez saisir la durée (en années) :</label>
+    <input type="number" id="duree" placeholder="Durée en années" required>
+    
+    <button onclick="calculerPaiement()">Appuyez pour calculer le Paiement Mensuel</button>
+
+    <p id="resultat"></p>
+</body>
+<footer>
+        <p>&copy; 2024 - @folli_duciel</p>
+    </footer>
+</html>

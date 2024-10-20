@@ -1,0 +1,33 @@
+/* Couleur de fond de mon choix à <body>
+je choisi un fond blanc */
+body{
+		background-color:white;
+	}
+	
+/* Sélecteur d'ID pour mettre le texte en gras */
+#texte-gras {
+				font-weight: bold;
+			}
+
+/* Sélecteur de classe pour mettre le 1er
+paragraphe en italique */
+.italique {
+				font-style: italic;
+			}
+			
+/* Sélecteur de classe pour changer le texte en bleu */
+.item-highlight {
+				color: blue;
+			}
+			
+/* Sélecteur d'attribut pour changer le fond en jaune
+de toutes les classes commençant par "a" */
+li[class^="a"] {
+				background-color: yellow;
+			}
+			
+/* Sélecteur d'attribut pour changer le fond en vert
+de toutes les classes se terminant par "deate" */
+li[class$="date"] {
+				background-color: green;
+			}
